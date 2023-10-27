@@ -59,7 +59,7 @@ main {
     margin-bottom: 1rem;
 }
 
-.input-box div{
+.input-box div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,17 +112,25 @@ main {
     color: var(--white);
 }
 
-.login > p {
+.login>p {
     color: var(--gray-600);
 }
 
-.login > p a {
+.login>p a {
     font-weight: 700;
     font-size: 1rem;
 }
 
+.bg-desktop {
+    display: none;
+}
+
 @media(min-width: 1000px) {
-    header  {
+    body {
+        display: flex;
+    }
+
+    header {
         background: none;
         justify-content: flex-start;
         padding-inline: 7rem;
@@ -135,5 +143,15 @@ main {
     main {
         padding-inline: 7rem;
     }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .bg-desktop {
+        display: block;
+        width: 100%
+    }
 }
+
 /* nome da cor, rgb, rgba, hex, hsl, hwb */
